@@ -1,0 +1,20 @@
+# Build output
+target/
+**/node_modules/
+# IDE and local environment
+.idea/
+.settings/
+.classpath
+.project
+*.iml
+.env
+.env.local
+application-local.yml
+application-secret.yml
+# Logs and archives
+*.log
+*.zip
+*.rar
+# OS
+.DS_Store
+Thumbs.db
