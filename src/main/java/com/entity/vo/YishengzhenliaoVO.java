@@ -1,0 +1,203 @@
+package com.entity.vo;
+
+import com.entity.YishengzhenliaoEntity;
+
+import com.baomidou.mybatisplus.annotations.TableName;
+import java.util.Date;
+import org.springframework.format.annotation.DateTimeFormat;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+import java.io.Serializable;
+ 
+
+/**
+ * 医生诊疗
+ * 手机端接口返回实体辅助类 
+ * （主要作用去除一些不必要的字段）
+ * @author 
+ * @email 
+ * @date 2023-03-22 23:22:56
+ */
+public class YishengzhenliaoVO  implements Serializable {
+	private static final long serialVersionUID = 1L;
+
+	 			
+	/**
+	 * 医生账号
+	 */
+	
+	private String yishengzhanghao;
+		
+	/**
+	 * 医生姓名
+	 */
+	
+	private String yishengxingming;
+		
+	/**
+	 * 账号
+	 */
+	
+	private String zhanghao;
+		
+	/**
+	 * 姓名
+	 */
+	
+	private String xingming;
+		
+	/**
+	 * 就诊时间
+	 */
+		
+	@JsonFormat(locale="zh", timezone="GMT+8", pattern="yyyy-MM-dd HH:mm:ss")
+	@DateTimeFormat 
+	private Date jiuzhenshijian;
+		
+	/**
+	 * 症状描述
+	 */
+	
+	private String zhengzhuangmiaoshu;
+		
+	/**
+	 * 初步诊断
+	 */
+	
+	private String chubuzhenduan;
+		
+	/**
+	 * 医嘱
+	 */
+	
+	private String yizhu;
+				
+	
+	/**
+	 * 设置：医生账号
+	 */
+	 
+	public void setYishengzhanghao(String yishengzhanghao) {
+		this.yishengzhanghao = yishengzhanghao;
+	}
+	
+	/**
+	 * 获取：医生账号
+	 */
+	public String getYishengzhanghao() {
+		return yishengzhanghao;
+	}
+				
+	
+	/**
+	 * 设置：医生姓名
+	 */
+	 
+	public void setYishengxingming(String yishengxingming) {
+		this.yishengxingming = yishengxingming;
+	}
+	
+	/**
+	 * 获取：医生姓名
+	 */
+	public String getYishengxingming() {
+		return yishengxingming;
+	}
+				
+	
+	/**
+	 * 设置：账号
+	 */
+	 
+	public void setZhanghao(String zhanghao) {
+		this.zhanghao = zhanghao;
+	}
+	
+	/**
+	 * 获取：账号
+	 */
+	public String getZhanghao() {
+		return zhanghao;
+	}
+				
+	
+	/**
+	 * 设置：姓名
+	 */
+	 
+	public void setXingming(String xingming) {
+		this.xingming = xingming;
+	}
+	
+	/**
+	 * 获取：姓名
+	 */
+	public String getXingming() {
+		return xingming;
+	}
+				
+	
+	/**
+	 * 设置：就诊时间
+	 */
+	 
+	public void setJiuzhenshijian(Date jiuzhenshijian) {
+		this.jiuzhenshijian = jiuzhenshijian;
+	}
+	
+	/**
+	 * 获取：就诊时间
+	 */
+	public Date getJiuzhenshijian() {
+		return jiuzhenshijian;
+	}
+				
+	
+	/**
+	 * 设置：症状描述
+	 */
+	 
+	public void setZhengzhuangmiaoshu(String zhengzhuangmiaoshu) {
+		this.zhengzhuangmiaoshu = zhengzhuangmiaoshu;
+	}
+	
+	/**
+	 * 获取：症状描述
+	 */
+	public String getZhengzhuangmiaoshu() {
+		return zhengzhuangmiaoshu;
+	}
+				
+	
+	/**
+	 * 设置：初步诊断
+	 */
+	 
+	public void setChubuzhenduan(String chubuzhenduan) {
+		this.chubuzhenduan = chubuzhenduan;
+	}
+	
+	/**
+	 * 获取：初步诊断
+	 */
+	public String getChubuzhenduan() {
+		return chubuzhenduan;
+	}
+				
+	
+	/**
+	 * 设置：医嘱
+	 */
+	 
+	public void setYizhu(String yizhu) {
+		this.yizhu = yizhu;
+	}
+	
+	/**
+	 * 获取：医嘱
+	 */
+	public String getYizhu() {
+		return yizhu;
+	}
+			
+}

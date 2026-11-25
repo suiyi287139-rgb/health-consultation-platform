@@ -1,7 +1,9 @@
 # Build output
 target/
 **/node_modules/
-# IDE and local environment
+**/dist/
+*.map
+# Local environment and IDE
 .idea/
 .settings/
 .classpath
@@ -11,10 +13,13 @@ target/
 .env.local
 application-local.yml
 application-secret.yml
-# Logs and archives
+# Runtime uploads are not source code
+src/main/resources/static/upload/*
+!src/main/resources/static/upload/.gitkeep
+# Temporary files
 *.log
+*.bak
 *.zip
 *.rar
-# OS
 .DS_Store
 Thumbs.db
